@@ -1,4 +1,4 @@
-package org.ranjit.SeleniumExamples;
+package org.testcases;
 
 import org.basic.BaseTest;
 import org.openqa.selenium.WebDriver;
