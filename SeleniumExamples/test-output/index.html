@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-MyTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="org.ranjit.SeleniumExamples.RunTheTestCase1" class="method navigator-link" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MyTestSuite" title="org.testcases.RunTheTestCase1" class="method navigator-link" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MyTestSuite -->
@@ -121,7 +121,7 @@
           <div class="suite-MyTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.ranjit.SeleniumExamples.RunTheTestCase1</span>
+              <span class="class-name">org.testcases.RunTheTestCase1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -145,7 +145,7 @@
 &lt;suite name=&quot;MyTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.ranjit.SeleniumExamples.RunTheTestCase1&quot;/&gt;
+      &lt;class name=&quot;org.testcases.RunTheTestCase1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- MyTestSuite --&gt;
@@ -188,13 +188,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCase1')
-data.setCell(0, 2, 'org.ranjit.SeleniumExamples.RunTheTestCase1')
-data.setCell(0, 3, 3);
+data.setCell(0, 2, 'org.testcases.RunTheTestCase1')
+data.setCell(0, 3, 14882);
 window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-MyTestSuite">
               </div> <!-- times-div-MyTestSuite -->
             </div> <!-- times-div -->
@@ -220,18 +220,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.ranjit.SeleniumExamples.RunTheTestCase1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.testcases.RunTheTestCase1</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">testCase1</span>
-                <span class="method-start">2377 ms</span>
+                <span class="method-start">2036 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2391 ms</span>
+                <span class="method-start">16928 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

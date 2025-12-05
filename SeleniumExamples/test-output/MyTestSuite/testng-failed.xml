@@ -3,12 +3,13 @@
 <suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="org.ranjit.SeleniumExamples.RunTheTestCase1">
+      <class name="org.testcases.RunTheTestCase1">
         <methods>
           <include name="testCase1"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- org.ranjit.SeleniumExamples.RunTheTestCase1 -->
+      </class> <!-- org.testcases.RunTheTestCase1 -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

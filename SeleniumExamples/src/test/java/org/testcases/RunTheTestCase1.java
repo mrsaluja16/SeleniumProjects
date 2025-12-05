@@ -2,6 +2,7 @@ package org.testcases;
 
 import org.basic.BaseTest;
 import org.openqa.selenium.WebDriver;
+import org.testCaseFunctioning.TestCaseFunctioning;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -28,7 +29,7 @@ public class RunTheTestCase1 extends BaseTest{
 	@Test
 	public void testCase1() {
 		try {
-			
+			new TestCaseFunctioning(driver).redBusTestCase();
 		}catch(Exception e) {
 			e.printStackTrace();
 			e.getMessage();
