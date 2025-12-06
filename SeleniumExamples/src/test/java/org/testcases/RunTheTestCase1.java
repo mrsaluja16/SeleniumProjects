@@ -29,7 +29,7 @@ public class RunTheTestCase1 extends BaseTest{
 	@Test
 	public void testCase1() {
 		try {
-			new TestCaseFunctioning(driver).redBusTestCase();
+			new TestCaseFunctioning(driver).redBusTestCase(super.timeoutValue);
 		}catch(Exception e) {
 			e.printStackTrace();
 			e.getMessage();

@@ -4,6 +4,7 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -11,7 +12,11 @@ import java.util.Date;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GeneralCommonFunction {
 	
@@ -48,5 +53,11 @@ public class GeneralCommonFunction {
 	
 	public static int getLastDayOfCurrentMonth() {
 		return LocalDateTime.now().getMonth().maxLength();
+	}
+	
+	public static void waitForElementToBeDisplayedAndClickable(WebDriver dr, WebElement ele, int timeInSeconds) {
+		WebDriverWait wait = new WebDriverWait(dr, Duration.ofSeconds(timeInSeconds));
+		wait.until(ExpectedConditions.visibilityOf(ele));
+		wait.until(ExpectedConditions.elementToBeClickable(ele));
 	}
 }

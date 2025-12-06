@@ -10,9 +10,12 @@ public class BaseTest {
 	
 	public WebDriver driver;
 	
+	public int timeoutValue = 0;
+	
 	public void openBrowser() throws Exception{
 		String browser = FileProperties.getPropertyValue("browser");
 		String url = FileProperties.getPropertyValue("url");
+		timeoutValue = Integer.parseInt(FileProperties.getPropertyValue("timeout"));
 		driver = getDriver(browser);
 		driver.get(url);
 		driver.manage().window().maximize();

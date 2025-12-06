@@ -17,16 +17,19 @@ public class TestCaseFunctioning{
 
 	/**
 	 * 
-	 * @implNote This function will enter the values in From: Delhi & To: Jaipur and select the Kashmiri Gate and Station Road, Jaipur
+	 * @implNote This function will enter the values in From: Delhi & To: Jaipur and select the Kashmiri Gate and Sindhi Camp, Jaipur
 	 * in the list respectively. Also select the 10th day from today for the Date of journey. Then provides you the travel iternary 
 	 * with the cheapest fare.
 	 *  
 	 */
-	public void redBusTestCase() throws Exception{
+	public void redBusTestCase(int timeoutValue) throws Exception{
 		selectFromAndTo("Delhi", "Jaipur");
 		selectJourneyDate(3);
 		redBusPages.hitSearchButton();
-		Thread.sleep(5000);
+		Thread.sleep(500);
+		redBusPages.priceSortButton(driver, "Ascending", timeoutValue);
+		String priceOfResult = redBusPages.getPriceFromFirstResult(driver, timeoutValue);
+		System.out.println("Lowest Price is: "+priceOfResult);
 	}
 	
 	
@@ -60,7 +63,7 @@ public class TestCaseFunctioning{
 			UICommonFunction.hitEnterButton(driver);
 			Thread.sleep(500);
 			String dropdownValue = redBusPages.getDataToJourneyTextbox();
-			if(dropdownValue.equalsIgnoreCase("station road, jaipur (rajasthan)")) {
+			if(dropdownValue.equalsIgnoreCase("sindhi camp, jaipur (rajasthan)")) {
 				toDataFoundInList = true;
 				break;
 			}

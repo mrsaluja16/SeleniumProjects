@@ -40,6 +40,12 @@ public class RedBusPages {
 	@FindBy(xpath = "//button[@aria-label='Search buses']")
 	private WebElement searchBusesButton;
 	
+	@FindBy(xpath = "//div[text()='Price']/parent::div")
+	private WebElement priceSortButton;
+	
+	@FindBy(xpath = "//ul/li[1]/div[1]/div[2]/div/p")
+	private WebElement firstResultPriceValue;
+	
 	@FindBy(xpath = "")
 	private WebElement a;
 	
@@ -118,5 +124,19 @@ public class RedBusPages {
 	public void hitSearchButton() {
 		searchBusesButton.click();
 	}
+	
+	public void priceSortButton(WebDriver dr, String sortAscOrDesc, int timeoutVal) {
+		GeneralCommonFunction.waitForElementToBeDisplayedAndClickable(dr, priceSortButton, timeoutVal);
+		priceSortButton.click();
+		if(sortAscOrDesc.toLowerCase().contains("Descending"))
+			priceSortButton.click();
+	}
+	
+	public String getPriceFromFirstResult(WebDriver dr, int timeoutVal) {
+		GeneralCommonFunction.waitForElementToBeDisplayedAndClickable(dr, firstResultPriceValue, timeoutVal);
+		return firstResultPriceValue.getText();
+	}
+
+	
 	
 }
