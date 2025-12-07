@@ -2,7 +2,7 @@
 <suite name="MyTestSuite">
     <test name="Test1">
         <classes>
-            <class name="org.testcases.RunTheTestCase1"/>
+            <class name="org.testcases.RunTheTestCases"/>
             
         </classes>
     </test>

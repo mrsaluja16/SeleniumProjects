@@ -4,13 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.pages.RedBusPages;
 import org.util.UICommonFunction;
 
-public class TestCaseFunctioning{
+public class RedBusTestCaseFunctioning{
 	
 	RedBusPages redBusPages;
 	
 	WebDriver driver;
 	
-	public TestCaseFunctioning(WebDriver driver) {
+	public RedBusTestCaseFunctioning(WebDriver driver) {
 		this.driver = driver;
 		redBusPages = new RedBusPages(this.driver);
 	}

@@ -35,5 +35,9 @@ public class BaseTest {
 				return null;
 		} 
 	}
+	
+	public void urlToSelect() {
+		
+	}
 
 }
