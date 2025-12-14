@@ -19,14 +19,15 @@ public class ExcelFileOperations {
 		List<ArrayList<String>> excelData = new ArrayList<ArrayList<String>>(); 
 		totalRow = getMaxRowNumber(file, sheetNum);
 		totalCell = getMaxCellNumber(file, sheetNum, 0);
-		for(int row=1; row<totalRow; row++) {
+		for(int row=0; row<totalRow; row++) {
+			ArrayList<String> rowData = new ArrayList<String>();
 			for(int cell=0; cell<totalCell; cell++) {
 				String value = getCellData(file, sheetNum, row, cell);
-				System.out.println("Value at ["+row+"]["+cell+"] is: "+value);
-				//Error is coming... Please have a look.
-				excelData.get(row).add(value);
+				rowData.add(value);
 			}
+			excelData.add(rowData);
 		}
+		System.out.println(excelData);
 		return excelData;
 	}
 	
@@ -44,7 +45,7 @@ public class ExcelFileOperations {
 		return cellValue;
 	}
 	
-	private static Integer getMaxRowNumber(File file, int sheetNum) throws Exception{
+	public static Integer getMaxRowNumber(File file, int sheetNum) throws Exception{
 		int rowNumber = 0;
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
@@ -56,7 +57,7 @@ public class ExcelFileOperations {
 		
 	}
 	
-	private static Integer getMaxCellNumber(File file, int sheetNum, int rowNum) throws Exception{
+	public static Integer getMaxCellNumber(File file, int sheetNum, int rowNum) throws Exception{
 		int cellNumber = 0;
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);

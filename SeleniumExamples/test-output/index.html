@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-MyTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="org.testcases.RunTheTestCase1" class="method navigator-link" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MyTestSuite" title="org.testcases.RunTheTestCases" class="method navigator-link" hash-for-method="createDataForHerokuappTestCase">createDataForHerokuappTestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MyTestSuite -->
@@ -121,14 +121,14 @@
           <div class="suite-MyTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.testcases.RunTheTestCase1</span>
+              <span class="class-name">org.testcases.RunTheTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase1">
-                  </a> <!-- testCase1 -->
-                  <span class="method-name">testCase1</span>
+                  <a name="createDataForHerokuappTestCase">
+                  </a> <!-- createDataForHerokuappTestCase -->
+                  <span class="method-name">createDataForHerokuappTestCase</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,7 @@
 &lt;suite name=&quot;MyTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.testcases.RunTheTestCase1&quot;/&gt;
+      &lt;class name=&quot;org.testcases.RunTheTestCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- MyTestSuite --&gt;
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCase1')
-data.setCell(0, 2, 'org.testcases.RunTheTestCase1')
-data.setCell(0, 3, 9840);
+data.setCell(0, 1, 'createDataForHerokuappTestCase')
+data.setCell(0, 2, 'org.testcases.RunTheTestCases')
+data.setCell(0, 3, 196855);
 window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-MyTestSuite">
               </div> <!-- times-div-MyTestSuite -->
             </div> <!-- times-div -->
@@ -209,9 +209,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MyTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.testcases.RunTheTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">redBusTestCase</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-MyTestSuite" class="panel">
@@ -220,18 +227,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.testcases.RunTheTestCase1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.testcases.RunTheTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">testCase1</span>
-                <span class="method-start">2101 ms</span>
+                <span class="method-name">createDataForHerokuappTestCase</span>
+                <span class="method-start">1795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11954 ms</span>
+                <span class="method-start">198661 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

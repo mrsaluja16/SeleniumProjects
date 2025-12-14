@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-06T19:01:58 IST" name="MyTestSuite" finished-at="2025-12-06T19:02:08 IST" duration-ms="9875">
+  <suite started-at="2025-12-14T20:25:30 IST" name="MyTestSuite" finished-at="2025-12-14T20:28:47 IST" duration-ms="196872">
     <groups>
     </groups>
-    <test started-at="2025-12-06T19:01:58 IST" name="Test1" finished-at="2025-12-06T19:02:08 IST" duration-ms="9875">
-      <class name="org.testcases.RunTheTestCase1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testcases.RunTheTestCase1@75d3a5e0]" started-at="2025-12-06T19:01:56 IST" name="setUp" finished-at="2025-12-06T19:01:58 IST" duration-ms="2066" status="PASS">
+    <test started-at="2025-12-14T20:25:30 IST" name="Test1" finished-at="2025-12-14T20:28:47 IST" duration-ms="196872">
+      <class name="org.testcases.RunTheTestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testcases.RunTheTestCases@75437611]" started-at="2025-12-14T20:25:28 IST" name="setUp" finished-at="2025-12-14T20:25:30 IST" duration-ms="1780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCase1()[pri:0, instance:org.testcases.RunTheTestCase1@75d3a5e0]" started-at="2025-12-06T19:01:58 IST" name="testCase1" finished-at="2025-12-06T19:02:08 IST" duration-ms="9840" status="PASS">
+        <test-method signature="createDataForHerokuappTestCase()[pri:0, instance:org.testcases.RunTheTestCases@75437611]" started-at="2025-12-14T20:25:30 IST" name="createDataForHerokuappTestCase" finished-at="2025-12-14T20:28:47 IST" duration-ms="196855" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testcases.RunTheTestCase1@75d3a5e0]" started-at="2025-12-06T19:02:08 IST" name="tearDown" finished-at="2025-12-06T19:02:11 IST" duration-ms="3116" status="PASS">
+        </test-method> <!-- createDataForHerokuappTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testcases.RunTheTestCases@75437611]" started-at="2025-12-14T20:28:47 IST" name="tearDown" finished-at="2025-12-14T20:28:50 IST" duration-ms="3118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- org.testcases.RunTheTestCase1 -->
+      </class> <!-- org.testcases.RunTheTestCases -->
     </test> <!-- Test1 -->
   </suite> <!-- MyTestSuite -->
 </testng-results>

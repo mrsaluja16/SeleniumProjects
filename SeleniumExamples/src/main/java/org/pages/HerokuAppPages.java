@@ -75,7 +75,8 @@ public class HerokuAppPages {
 		submitButton.click();
 	}
 	
-	public void createUsers(WebDriver dr, String[] userData, int timeout) {
+	public void createUsers(WebDriver dr, String[] userData, int timeout) throws Exception {
+		Thread.sleep(500);
 		GeneralCommonFunction.waitForElementToBeDisplayedAndClickable(dr, addNewContactButton, timeout);
 		addNewContactButton.click();
 		GeneralCommonFunction.waitForElementToBeDisplayedAndClickable(dr, firstNameTextbox, timeout);
@@ -92,5 +93,6 @@ public class HerokuAppPages {
 		countryTextbox.sendKeys(userData[10]);
 		submitAddContactButton.click();
 		GeneralCommonFunction.waitForElementToBeDisplayedAndClickable(dr, addNewContactButton, timeout);
+		Thread.sleep(500);
 	}
 }

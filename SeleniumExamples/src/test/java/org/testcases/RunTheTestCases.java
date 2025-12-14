@@ -43,7 +43,6 @@ public class RunTheTestCases extends BaseTest{
 	@Test(enabled = false)
 	public void redBusTestCase() {
 		try {
-			driver.get(FileProperties.getPropertyValue("herokuappurl"));
 			new RedBusTestCaseFunctioning(driver).redBusTestCase(timeoutValue);
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -55,9 +54,16 @@ public class RunTheTestCases extends BaseTest{
 	@Test
 	public void createDataForHerokuappTestCase() {
 		try {
-			new RedBusTestCaseFunctioning(driver).redBusTestCase(timeoutValue);
-			new CreateUsersDataForHerokuApp(driver).login(FileProperties.getPropertyValue("herokuappusername"), 
-					FileProperties.getPropertyValue("herokuappPassword"), timeoutValue);
+			//new RedBusTestCaseFunctioning(driver).redBusTestCase(timeoutValue);
+			driver.get(FileProperties.getPropertyValue("herokuappurl"));
+			CreateUsersDataForHerokuApp hero = new CreateUsersDataForHerokuApp(driver);
+			String username = FileProperties.getPropertyValue("herokuappusername");
+			String password = FileProperties.getPropertyValue("herokuappPassword");
+			String filePath = FileProperties.getPropertyValue("herokuappExcelFile");
+			int sheetNum = Integer.parseInt(FileProperties.getPropertyValue("herokuappExcelSheetNumber"));
+			File file = new File(filePath);
+			hero.login(username, password , timeoutValue);
+			hero.createUserData(file, sheetNum, timeoutValue);
 		}catch(Exception e) {
 			e.printStackTrace();
 			e.getMessage();
