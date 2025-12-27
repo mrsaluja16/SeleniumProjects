@@ -1,0 +1,13 @@
+{
+    "firstName": "Tom",
+        "lastName": "Hawks",
+        "birthdate": "1978-03-12",
+        "email": "tomHawks@office.test.tom",
+        "phone": "8877665544",
+        "street1": "Greater Kailash",
+        "street2": "Road",
+        "city": "Delhi",
+        "stateProvince": "New Delhi",
+        "postalCode": "110045",
+        "country": "India"
+}

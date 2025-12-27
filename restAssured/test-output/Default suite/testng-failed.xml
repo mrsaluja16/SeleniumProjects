@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GETAPITestWithBDD.GoRestAPI">
+      <class name="PostApiTest.CreateUserApiTest">
         <methods>
-          <include name="setUp"/>
-          <include name="getSingleUserValidateBodyTest"/>
+          <include name="createUserWithJSONFileTest"/>
         </methods>
-      </class> <!-- GETAPITestWithBDD.GoRestAPI -->
+      </class> <!-- PostApiTest.CreateUserApiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

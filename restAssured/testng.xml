@@ -2,8 +2,9 @@
 <suite name="MyTestSuite">
     <test name="Test1">
         <classes>
-            <class name="GETAPITestWithBDD.ContactsAPI"/>
-            
+            <!--  <class name="GETAPITestWithBDD.ContactsAPI"/>-->
+            <!-- <class name="GetAPIWithNonBDDFormat.GetContactsAPITest"/> -->
+            <class name="PostApiTest.CreateUserApiTest"/>
         </classes>
     </test>
 </suite>

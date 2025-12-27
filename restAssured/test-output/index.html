@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="GETAPITestWithBDD.ProductAPI" class="method navigator-link" hash-for-method="getAllProductsCountTest">getAllProductsCountTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="PostApiDifferentBodyTypes.PostApiDifferentBody" class="method navigator-link" hash-for-method="bodyWithImageFileTest">bodyWithImageFileTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">GETAPITestWithBDD.ProductAPI</span>
+              <span class="class-name">PostApiDifferentBodyTypes.PostApiDifferentBody</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getAllProductsCountTest">
-                  </a> <!-- getAllProductsCountTest -->
-                  <span class="method-name">getAllProductsCountTest</span>
+                  <a name="bodyWithImageFileTest">
+                  </a> <!-- bodyWithImageFileTest -->
+                  <span class="method-name">bodyWithImageFileTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/95/dmz_g3hx16jb979rf2r0h8_r0000gn/T/testng-eclipse--1996995047/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/95/dmz_g3hx16jb979rf2r0h8_r0000gn/T/testng-eclipse-2087062295/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;GETAPITestWithBDD.ProductAPI&quot;/&gt;
+      &lt;class name=&quot;PostApiDifferentBodyTypes.PostApiDifferentBody&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;bodyWithImageFileTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PostApiDifferentBodyTypes.PostApiDifferentBody --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -187,9 +191,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getAllProductsCountTest')
-data.setCell(0, 2, 'GETAPITestWithBDD.ProductAPI')
-data.setCell(0, 3, 1223);
+data.setCell(0, 1, 'bodyWithImageFileTest')
+data.setCell(0, 2, 'PostApiDifferentBodyTypes.PostApiDifferentBody')
+data.setCell(0, 3, 1199);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -209,13 +213,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">GETAPITestWithBDD.ProductAPI</span>
+              <span class="ignored-class-name">PostApiDifferentBodyTypes.PostApiDifferentBody</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">getAllProductsTest</span>
+                <span class="ignored-method-name">bodyWithXMLTest</span>
+                <br/>
+                <span class="ignored-method-name">bodyWithMultiPartTest</span>
+                <br/>
+                <span class="ignored-method-name">bodyWithJavascriptTest</span>
+                <br/>
+                <span class="ignored-method-name">bodyWithPDFFileTest</span>
+                <br/>
+                <span class="ignored-method-name">bodyWithHTMLTest</span>
+                <br/>
+                <span class="ignored-method-name">bodyWithPlainTextTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -227,14 +241,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">GETAPITestWithBDD.ProductAPI</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">PostApiDifferentBodyTypes.PostApiDifferentBody</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getAllProductsCountTest</span>
-                <span class="method-start">140 ms</span>
+                <span class="method-name">bodyWithImageFileTest</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

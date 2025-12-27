@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-25T22:02:20 IST" name="Default suite" finished-at="2025-12-25T22:02:21 IST" duration-ms="1376">
+  <suite started-at="2025-12-27T20:09:20 IST" name="Default suite" finished-at="2025-12-27T20:09:21 IST" duration-ms="1212">
     <groups>
     </groups>
-    <test started-at="2025-12-25T22:02:20 IST" name="Default test" finished-at="2025-12-25T22:02:21 IST" duration-ms="1376">
-      <class name="GETAPITestWithBDD.ProductAPI">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:GETAPITestWithBDD.ProductAPI@3a44431a]" started-at="2025-12-25T22:02:20 IST" name="setUp" finished-at="2025-12-25T22:02:20 IST" duration-ms="139" status="PASS">
+    <test started-at="2025-12-27T20:09:20 IST" name="Default test" finished-at="2025-12-27T20:09:21 IST" duration-ms="1212">
+      <class name="PostApiDifferentBodyTypes.PostApiDifferentBody">
+        <test-method signature="bodyWithImageFileTest()[pri:0, instance:PostApiDifferentBodyTypes.PostApiDifferentBody@37d4349f]" started-at="2025-12-27T20:09:20 IST" name="bodyWithImageFileTest" finished-at="2025-12-27T20:09:21 IST" duration-ms="1199" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="getAllProductsCountTest()[pri:0, instance:GETAPITestWithBDD.ProductAPI@3a44431a]" started-at="2025-12-25T22:02:20 IST" name="getAllProductsCountTest" finished-at="2025-12-25T22:02:21 IST" duration-ms="1223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllProductsCountTest -->
-      </class> <!-- GETAPITestWithBDD.ProductAPI -->
+        </test-method> <!-- bodyWithImageFileTest -->
+      </class> <!-- PostApiDifferentBodyTypes.PostApiDifferentBody -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
